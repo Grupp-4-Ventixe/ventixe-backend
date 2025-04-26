@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LFqUZTet/o8=",
+  "success": true,
+  "projectFilePath": "C:\\Nackademin\\ASP.NET-2\\ventixe_backend\\src\\BookingService\\BookingService.Api\\BookingService.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nino9\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.2\\microsoft.aspnetcore.openapi.9.0.2.nupkg.sha512",
+    "C:\\Users\\nino9\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
