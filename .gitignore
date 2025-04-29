@@ -1,0 +1,41 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+TestResults/
+*.log
+
+# .NET-specific
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.dbcache
+*.mdf
+*.ldf
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Copilot / IntelliCode
+**/CopilotIndices/
+**/FileContentIndex/
+**/SemanticSymbols*
+slnx.sqlite
