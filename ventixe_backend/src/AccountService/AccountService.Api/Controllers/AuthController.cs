@@ -1,6 +1,5 @@
-﻿using AccountService.Business.Interfaces;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Http;
+﻿using AccountService.Business.DTOs;
+using AccountService.Business.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AccountService.Api.Controllers
@@ -12,7 +11,7 @@ namespace AccountService.Api.Controllers
         private readonly IAuthService _authService;
 
         [HttpPost("signup")]
-        public async Task<IActionResult> SignUp([FromBody] SignUpFormData formData)
+        public async Task<IActionResult> SignUp([FromBody] SignUpDto formData)
         {
             if (!ModelState.IsValid)       
                 return BadRequest(ModelState);
