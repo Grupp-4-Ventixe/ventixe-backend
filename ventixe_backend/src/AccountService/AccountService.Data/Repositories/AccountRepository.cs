@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AccountService.Data.Repositories
+namespace AccountService.Data.Repositories;
+
+public class AccountRepository
 {
-    class AccountRepository
-    {
-    }
+
 }

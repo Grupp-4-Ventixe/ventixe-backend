@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AccountService.Business.DTOs;
+using Microsoft.AspNetCore.Identity;
 
-namespace AccountService.Business.Interfaces
+namespace AccountService.Business.Interfaces;
+
+public interface IAuthService
 {
-    interface IAuthService
-    {
-    }
+    Task<SignInResult> SignInAsync(SignInDto formData);
+    Task<SignUpResult> SignUpAsync(SignUpDto formData);
 }
