@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AccountService.Data.Contexts
+namespace AccountService.Data.Contexts;
+
+public class DataContext
 {
-    class DataContext
-    {
-    }
+
 }
