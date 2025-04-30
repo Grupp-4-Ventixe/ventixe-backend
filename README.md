@@ -1,7 +1,7 @@
 # Ventixe-backend
 
 ## Översikt
-Detta är ett grupprojekt som utvecklar en eventhanteringssida där användare kan skapa, boka och hantera event. Projektet är uppdelat i flera microservices som var och en har ett tydligt ansvar.  
+Detta är ett grupprojekt som utvecklar en eventhanteringssida där användare kan boka och hantera event. Projektet är uppdelat i flera microservices som var och en har ett tydligt ansvar.  
 
 Projektet är byggt med ASP.NET Core, Entity Framework Core, och en separat frontend.
 
