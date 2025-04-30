@@ -5,7 +5,7 @@ Detta är ett grupprojekt som utvecklar en eventhanteringssida där användare k
 
 Projektet är byggt med ASP.NET Core, Entity Framework Core, och en separat frontend.
 
-## Mikrotjänster
+## Microservices
 
 | Tjänst            | Beskrivning                                        |
 |------------------|----------------------------------------------------|
