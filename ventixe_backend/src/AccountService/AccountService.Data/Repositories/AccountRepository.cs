@@ -1,12 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AccountService.Data.Contexts;
+using AccountService.Data.Entities;
+using AccountService.Data.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace AccountService.Data.Repositories;
 
-public class AccountRepository
+public class AccountRepository : BaseRepository<AccountEntity>, IAccountRepository
 {
+    public AccountRepository(AccountDbContext context) : base(context)
+    {
+    }
 
+    public async Task<AccountEntity?> GetUserByIdAsync(string userId)
+    {
+        return await _context.AccountEntities
+            .Where(account => account.UserId == userId)
+            .FirstOrDefaultAsync();
+    }
 }
