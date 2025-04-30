@@ -1,7 +1,7 @@
-﻿
-using AccountService.Business.DTOs;
+﻿using AccountService.Business.DTOs;
 using AccountService.Business.Interfaces;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace AccountService.Business.Services;
 
@@ -44,5 +44,16 @@ public class AuthService : IAuthService
             lockoutOnFailure: false
         );
     }
+
+    public async Task LogoutAsync()
+    {
+        await _signInManager.SignOutAsync();
+    }
+
+    public async Task<bool> UserExistsAsync(string email)
+    {
+        return await _userManager.Users.AnyAsync(x => x.Email == email);
+    }
+
 
 }

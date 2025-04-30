@@ -1,10 +1,11 @@
 ﻿using AccountService.Business.DTOs;
+using AccountService.Business.Interfaces;
 using AccountService.Data.Interfaces;
 using Microsoft.AspNetCore.Identity;
 
 namespace AccountService.Business.Services;
 
-public class AccountService
+public class AccountService : IAccountService
 {
     private readonly UserManager<IdentityUser> _userManager;
     private readonly IAccountRepository _accountRepository;
