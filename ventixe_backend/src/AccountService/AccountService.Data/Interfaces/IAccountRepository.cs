@@ -2,7 +2,7 @@
 
 namespace AccountService.Data.Interfaces;
 
-public interface IAccountRepository
+public interface IAccountRepository : IBaseRepository<AccountEntity>
 {
     Task<AccountEntity?> GetUserByIdAsync(string userId);
 }

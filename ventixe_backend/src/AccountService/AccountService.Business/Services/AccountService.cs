@@ -1,4 +1,5 @@
 ﻿using AccountService.Business.DTOs;
+using AccountService.Data.Interfaces;
 using Microsoft.AspNetCore.Identity;
 
 namespace AccountService.Business.Services;
@@ -6,6 +7,13 @@ namespace AccountService.Business.Services;
 public class AccountService
 {
     private readonly UserManager<IdentityUser> _userManager;
+    private readonly IAccountRepository _accountRepository;
+
+    public AccountService(UserManager<IdentityUser> userManager, IAccountRepository accountRepository)
+    {
+        _userManager = userManager;
+        _accountRepository = accountRepository;
+    }
 
     public async Task<AccountDto> GetAccountByIdAsync(string userId)
     {
@@ -13,6 +21,8 @@ public class AccountService
 
         if (user == null)
             return null;
+
+        var account = await _accountRepository.GetUserByIdAsync(userId);
 
         return new AccountDto
         {

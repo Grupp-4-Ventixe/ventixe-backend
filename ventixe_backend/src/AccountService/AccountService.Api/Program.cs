@@ -1,4 +1,6 @@
 using AccountService.Data.Contexts;
+using AccountService.Data.Interfaces;
+using AccountService.Data.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,6 +11,9 @@ builder.Services.AddDbContext<AccountDbContext>(options =>
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<AccountDbContext>();
+
+builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+
 
 builder.Services.AddControllers();
 
