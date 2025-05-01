@@ -53,3 +53,7 @@ slnx.sqlite
 /ventixe_backend/src/AccountService/AccountService.Api/obj/AccountService.Api.csproj.nuget.g.targets
 /ventixe_backend/src/AccountService/AccountService.Api/obj/AccountService.Api.csproj.nuget.g.props
 /ventixe_backend/src/AccountService/AccountService.Api/obj/Debug/net9.0/AccountService.Api.csproj.AssemblyReference.cache
+/ventixe_backend/src/EventService/EventService.Api/obj/Debug/net9.0/EventService.Api.AssemblyInfo.cs
+/ventixe_backend/src/EventService/EventService.Api/obj/Debug/net9.0/EventService.Api.AssemblyInfoInputs.cache
+/ventixe_backend/src/EventService/EventService.Api/obj/Debug/net9.0/EventService.Api.assets.cache
+/ventixe_backend/src/EventService/EventService.Api/obj/Debug/net9.0/EventService.Api.GeneratedMSBuildEditorConfig.editorconfig
