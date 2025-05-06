@@ -1,4 +1,6 @@
+using Business.Services;
 using Data.Context;
+using Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,9 @@ builder.Services.AddDbContext<EventDbContext>(options =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IEventService, EventsService>();
+builder.Services.AddScoped<IEventRepository, EventRepository>();
+
 
 var app = builder.Build();
 
